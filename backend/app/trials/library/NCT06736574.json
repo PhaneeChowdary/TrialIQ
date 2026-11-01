@@ -1,0 +1,25 @@
+{
+ "nct_id": "NCT06736574",
+ "title": "Study With Omecamtiv Mecarbil (CK-1827452) to Treat Chronic Heart Failure With Severely Reduced Ejection Fraction",
+ "official_title": "A Multi-Center, Double-Blind, Randomized, Placebo-Controlled Trial to Assess Efficacy and Safety of Omecamtiv Mecarbil in Patients With Symptomatic Heart Failure With Severely Reduced Ejection Fraction (COMET-HF)",
+ "status": "RECRUITING",
+ "phases": [
+  "PHASE3"
+ ],
+ "conditions": [
+  "Heart Failure",
+  "Heart Failure With Reduced Ejection Fraction"
+ ],
+ "sponsor": "Cytokinetics",
+ "min_age": "18 Years",
+ "max_age": "85 Years",
+ "sex": "ALL",
+ "eligibility": "Inclusion Criteria:\n\nAdult patients who meet all the following criteria at screening may be included in the study:\n\n* Are between \u2265 18 years and \u2264 85 years at the signing of informed consent\n* Have a history of chronic HFrEF, defined as requiring treatment for HF for a minimum of 3 months prior to screening\n* Are receiving oral loop diuretics on a regular schedule\n* Patients without AFF on screening ECG:\n\n  * LVEF \\< 30% within 6 months of screening\n  * Elevated N-terminal prohormone of B-type natriuretic peptide (NT-proBNP) \u2265 1000 pg/mL (BNP \u2265 300 pg/mL)\n* Patients with AFF on screening ECG:\n\n  * LVEF \\< 25% within 6 months of screening\n  * Elevated N-terminal prohormone of B-type natriuretic peptide (NT-proBNP) \u2265 3000 pg/mL (BNP \u2265 900 pg/mL)\n  * Not currently taking digoxin\n* Meet one of the following criteria for a recent HF event:\n\n  * Are currently hospitalized with the primary reason of HF\n  * Had an HF event (as defined in the primary endpoint) within 12 months prior to screening. For the purposes of a qualifying HF event, subcutaneous furosemide will be treated as equivalent to intravenous furosemide Or\n  * Had outpatient escalation of oral diuretics due to worsening signs and symptoms of heart failure plus one of two additional criteria sustained for at least 1 week: (1) at least 50% or 1.5-fold increase in daily loop-diuretic-equivalent dose; (2) the addition of a new diuretic class to a loop diuretic.\n* Are established on regional standard-of-care HF therapies for at least 30 days prior to screening\n* Systolic blood pressure \u2264 140 mmHg\n\nExclusion Criteria:\n\nAny of the following criteria will exclude potential patients from the study:\n\n* Have AFF on the screening ECG and are currently taking digoxin\n* Have had any event or procedure that may have resulted in a change in ejection fraction, including, but not limited to, acute coronary syndrome and/or any coronary revascularization, cardiac surgery, valve surgery, any coronary revascularization, and/or cardiac resynchronization, or cardiac contractility modulation therapy within 3 months of screening\n* Are admitted to a long-term care facility or hospice\n* Have a projected survival of \\< 12 months due to non-cardiovascular causes based on clinical judgment\n* Are receiving intravenous inotropes or intravenous vasopressors \u2264 3 days prior to screening\n* Are receiving mechanical hemodynamic support or mechanical ventilation \u2264 7 days prior to screening\n* Are receiving intravenous diuretics, intravenous vasodilators, or supplemental oxygen therapy \u2264 12 hours prior to screening (except for nocturnal supplemental oxygen for sleep apnea or heart failure)\n* Have an estimated glomerular filtration rate (eGFR) \\< 20 mL/min/1.73m2 or receiving dialysis at screening\n* Have previously had a solid organ transplant\n* Are receiving treatment in another investigational device or drug study or are within 30 days of ending such investigational treatment at screening\n* Have received omecamtiv mecarbil in a previous clinical trial\n* Are pregnant or planning pregnancy during the study period, or planning to breastfeed during treatment with IP or within 5 days after the end of treatment with IP\n* Have primary infiltrative cardiomyopathy (e.g. cardiac amyloidosis) or severe stenotic valvular disease",
+ "indiana_sites": [
+  "Cardiovascular Research of Northwest Indiana, LLC.",
+  "Deaconess Heart Group",
+  "Reid Physician Associates"
+ ],
+ "last_update": "2026-09-24",
+ "fetched": "2026-10-06"
+}

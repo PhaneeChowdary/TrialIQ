@@ -1,0 +1,449 @@
+{
+ "nct_id": "NCT06736574",
+ "screen_date": "2026-10-01",
+ "criteria": [
+  {
+   "id": "I1",
+   "kind": "inclusion",
+   "text": "Are between ≥ 18 years and ≤ 85 years at the signing of informed consent",
+   "atoms": [
+    {
+     "type": "age",
+     "concept": "age",
+     "min": 18.0,
+     "max": 85.0,
+     "unit": "years"
+    }
+   ]
+  },
+  {
+   "id": "I2",
+   "kind": "inclusion",
+   "text": "Have a history of chronic HFrEF, defined as requiring treatment for HF for a minimum of 3 months prior to screening",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "HFrEF",
+     "codes": [
+      "I50.2",
+      "I50.4"
+     ],
+     "keywords": [
+      "HFrEF",
+      "heart failure with reduced ejection fraction",
+      "systolic heart failure"
+     ],
+     "min_duration_days": 90
+    }
+   ]
+  },
+  {
+   "id": "I3",
+   "kind": "inclusion",
+   "text": "Are receiving oral loop diuretics on a regular schedule",
+   "atoms": [
+    {
+     "type": "medication",
+     "concept": "loop diuretic",
+     "codes": [
+      "4603",
+      "38413",
+      "1808"
+     ],
+     "keywords": [
+      "furosemide",
+      "torsemide",
+      "bumetanide"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "I4",
+   "kind": "inclusion",
+   "text": "LVEF \\< 30% within 6 months of screening",
+   "combine": "any",
+   "atoms": [
+    {
+     "type": "group",
+     "concept": "group",
+     "all_of": [
+      {
+       "type": "condition",
+       "concept": "atrial fibrillation",
+       "codes": [
+        "I48"
+       ],
+       "keywords": [
+        "atrial fibrillation",
+        "afib",
+        "AF"
+       ]
+      },
+      {
+       "type": "lab",
+       "concept": "LVEF",
+       "codes": [
+        "10230-1",
+        "18043-0"
+       ],
+       "keywords": [
+        "LVEF",
+        "ejection fraction",
+        "EF"
+       ],
+       "max": 25.0,
+       "max_exclusive": true,
+       "unit": "%",
+       "lookback_days": 180
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "concept": "group",
+     "all_of": [
+      {
+       "type": "condition",
+       "concept": "atrial fibrillation",
+       "codes": [
+        "I48"
+       ],
+       "keywords": [
+        "atrial fibrillation",
+        "afib",
+        "AF"
+       ],
+       "negate": true
+      },
+      {
+       "type": "lab",
+       "concept": "LVEF",
+       "codes": [
+        "10230-1",
+        "18043-0"
+       ],
+       "keywords": [
+        "LVEF",
+        "ejection fraction",
+        "EF"
+       ],
+       "max": 30.0,
+       "max_exclusive": true,
+       "unit": "%",
+       "lookback_days": 180
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "I5",
+   "kind": "inclusion",
+   "text": "Elevated N-terminal prohormone of B-type natriuretic peptide (NT-proBNP) ≥ 1000 pg/mL (BNP ≥ 300 pg/mL)",
+   "combine": "any",
+   "atoms": [
+    {
+     "type": "group",
+     "concept": "group",
+     "all_of": [
+      {
+       "type": "condition",
+       "concept": "atrial fibrillation",
+       "codes": [
+        "I48"
+       ],
+       "keywords": [
+        "atrial fibrillation",
+        "afib",
+        "AF"
+       ]
+      },
+      {
+       "type": "lab",
+       "concept": "NT-proBNP",
+       "codes": [
+        "33762-6"
+       ],
+       "keywords": [
+        "NT-proBNP"
+       ],
+       "min": 3000.0,
+       "unit": "pg/mL",
+       "lookback_days": 180
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "concept": "group",
+     "all_of": [
+      {
+       "type": "condition",
+       "concept": "atrial fibrillation",
+       "codes": [
+        "I48"
+       ],
+       "keywords": [
+        "atrial fibrillation",
+        "afib",
+        "AF"
+       ],
+       "negate": true
+      },
+      {
+       "type": "lab",
+       "concept": "NT-proBNP",
+       "codes": [
+        "33762-6"
+       ],
+       "keywords": [
+        "NT-proBNP"
+       ],
+       "min": 1000.0,
+       "unit": "pg/mL",
+       "lookback_days": 180
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "I6",
+   "kind": "inclusion",
+   "text": "Had an HF event (as defined in the primary endpoint) within 12 months prior to screening.",
+   "atoms": [
+    {
+     "type": "note",
+     "concept": "heart failure hospitalization or outpatient diuretic escalation",
+     "keywords": [
+      "acute on chronic systolic heart failure",
+      "volume overload",
+      "IV furosemide",
+      "furosemide increased",
+      "worsening heart failure"
+     ],
+     "lookback_days": 365
+    }
+   ]
+  },
+  {
+   "id": "I7",
+   "kind": "inclusion",
+   "text": "Systolic blood pressure ≤ 140 mmHg",
+   "atoms": [
+    {
+     "type": "lab",
+     "concept": "systolic blood pressure",
+     "codes": [
+      "8480-6"
+     ],
+     "keywords": [
+      "BP"
+     ],
+     "max": 140.0,
+     "unit": "mm[Hg]",
+     "lookback_days": 90
+    }
+   ]
+  },
+  {
+   "id": "E1",
+   "kind": "exclusion",
+   "text": "Have AFF on the screening ECG and are currently taking digoxin",
+   "atoms": [
+    {
+     "type": "group",
+     "concept": "group",
+     "all_of": [
+      {
+       "type": "condition",
+       "concept": "atrial fibrillation",
+       "codes": [
+        "I48"
+       ],
+       "keywords": [
+        "atrial fibrillation",
+        "afib",
+        "AF"
+       ]
+      },
+      {
+       "type": "medication",
+       "concept": "digoxin",
+       "codes": [
+        "3407"
+       ],
+       "keywords": [
+        "digoxin"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E2",
+   "kind": "exclusion",
+   "text": "Have had any event or procedure that may have resulted in a change in ejection fraction, including, but not limited to, acute coronary syndrome and/or any coronary revascularization, cardiac surgery, valve surgery, any coronary revascularization, and/or cardiac resynchronization, or cardiac contractility modulation therapy within 3 months of screening",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "acute coronary syndrome or revascularization",
+     "codes": [
+      "I21",
+      "I24"
+     ],
+     "keywords": [
+      "NSTEMI",
+      "STEMI",
+      "myocardial infarction",
+      "PCI",
+      "stent",
+      "CABG"
+     ],
+     "lookback_days": 90
+    }
+   ]
+  },
+  {
+   "id": "E3",
+   "kind": "exclusion",
+   "text": "Are admitted to a long-term care facility or hospice",
+   "atoms": [
+    {
+     "type": "note",
+     "concept": "hospice or long-term care",
+     "keywords": [
+      "hospice",
+      "long-term care",
+      "nursing home",
+      "skilled nursing"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E4",
+   "kind": "exclusion",
+   "text": "Have an estimated glomerular filtration rate (eGFR) \\< 20 mL/min/1.73m2 or receiving dialysis at screening",
+   "combine": "any",
+   "atoms": [
+    {
+     "type": "lab",
+     "concept": "eGFR",
+     "codes": [
+      "98979-8",
+      "62238-1",
+      "33914-3"
+     ],
+     "keywords": [
+      "eGFR"
+     ],
+     "max": 20.0,
+     "max_exclusive": true,
+     "unit": "mL/min/1.73m2",
+     "lookback_days": 90
+    },
+    {
+     "type": "condition",
+     "concept": "dialysis",
+     "codes": [
+      "Z99.2"
+     ],
+     "keywords": [
+      "dialysis",
+      "hemodialysis"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E5",
+   "kind": "exclusion",
+   "text": "Have previously had a solid organ transplant",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "solid organ transplant",
+     "codes": [
+      "Z94"
+     ],
+     "keywords": [
+      "transplant"
+     ],
+     "status": "ever"
+    }
+   ]
+  },
+  {
+   "id": "E6",
+   "kind": "exclusion",
+   "text": "Are pregnant or planning pregnancy during the study period, or planning to breastfeed during treatment with IP or within 5 days after the end of treatment with IP",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "pregnancy",
+     "codes": [
+      "Z33",
+      "O09"
+     ],
+     "keywords": [
+      "pregnant",
+      "pregnancy",
+      "gestation"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E7",
+   "kind": "exclusion",
+   "text": "Have primary infiltrative cardiomyopathy (e.g. cardiac amyloidosis) or severe stenotic valvular disease",
+   "combine": "any",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "cardiac amyloidosis",
+     "codes": [
+      "E85"
+     ],
+     "keywords": [
+      "amyloidosis",
+      "amyloid",
+      "ATTR"
+     ],
+     "status": "ever"
+    },
+    {
+     "type": "note",
+     "concept": "severe aortic stenosis",
+     "keywords": [
+      "severe aortic stenosis",
+      "aortic stenosis"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "N1",
+   "kind": "inclusion",
+   "text": "Are established on regional standard-of-care HF therapies for at least 30 days prior to screening",
+   "screenable": false
+  },
+  {
+   "id": "N2",
+   "kind": "exclusion",
+   "text": "Have a projected survival of \\< 12 months due to non-cardiovascular causes based on clinical judgment",
+   "screenable": false
+  },
+  {
+   "id": "N3",
+   "kind": "exclusion",
+   "text": "Are receiving intravenous inotropes or intravenous vasopressors ≤ 3 days prior to screening",
+   "screenable": false
+  }
+ ],
+ "approved_by": "Study coordinator (demo)",
+ "approved_at": "2026-10-01"
+}

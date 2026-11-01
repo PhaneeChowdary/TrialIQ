@@ -1,0 +1,1220 @@
+{
+ "created": "2026-10-06T00:40:56",
+ "model": {
+  "protocol": [
+   "ollama:qwen3:8b"
+  ],
+  "chart": [
+   "ollama:qwen3:8b"
+  ],
+  "draft": [
+   "ollama:qwen3:8b"
+  ]
+ },
+ "screen_date": "2026-10-01",
+ "patients": 240,
+ "limit": null,
+ "trials": {
+  "NCT07668388": {
+   "gold": {
+    "ineligible": 202,
+    "eligible": 34,
+    "unknown": 4
+   },
+   "methods": {
+    "rules": {
+     "tp": 14,
+     "fp": 0,
+     "fn": 20,
+     "precision": 1.0,
+     "recall": 0.412,
+     "missed_as_ineligible": 0,
+     "needs_review": 36,
+     "exact": 208,
+     "n": 240,
+     "accuracy": 0.867,
+     "recall_by": {
+      "clinic": {
+       "ECH": {
+        "found": 0,
+        "eligible": 16
+       },
+       "MHK": {
+        "found": 5,
+        "eligible": 6
+       },
+       "NFM": {
+        "found": 9,
+        "eligible": 12
+       }
+      },
+      "race": {
+       "Black or African American": {
+        "found": 1,
+        "eligible": 13
+       },
+       "Other": {
+        "found": 1,
+        "eligible": 2
+       },
+       "White": {
+        "found": 12,
+        "eligible": 19
+       }
+      }
+     },
+     "hard": {
+      "n": 24,
+      "right": 2,
+      "review": 24,
+      "wrong": 0
+     },
+     "prescreen": {
+      "excluded": 190,
+      "open": 34,
+      "eligible": 14,
+      "missing": 2
+     },
+     "open_patients": 34,
+     "criterion_accuracy": 1.0,
+     "criteria_decided": 1639,
+     "traps": {
+      "family_history": {
+       "right": 0,
+       "n": 4
+      },
+      "metformin_recent_start": {
+       "right": 0,
+       "n": 1
+      },
+      "mild_retinopathy": {
+       "right": 1,
+       "n": 1
+      },
+      "negated_hypo_unawareness": {
+       "right": 0,
+       "n": 3
+      },
+      "no_lab": {
+       "right": 2,
+       "n": 2
+      },
+      "old_diabetes_med": {
+       "right": 0,
+       "n": 2
+      },
+      "short_insulin_course": {
+       "right": 1,
+       "n": 4
+      },
+      "stale_lab": {
+       "right": 0,
+       "n": 1
+      },
+      "stale_med_list": {
+       "right": 0,
+       "n": 2
+      }
+     },
+     "llm_calls": 0,
+     "tokens": 0,
+     "failed_calls": 0,
+     "seconds": 0.0,
+     "seconds_per_open_patient": null,
+     "guard_problems": 0,
+     "reviewer_rejections": 0,
+     "answers_accepted": 0,
+     "errors": {}
+    },
+    "rules_mapped": {
+     "tp": 18,
+     "fp": 0,
+     "fn": 16,
+     "precision": 1.0,
+     "recall": 0.529,
+     "missed_as_ineligible": 0,
+     "needs_review": 26,
+     "exact": 218,
+     "n": 240,
+     "accuracy": 0.908,
+     "recall_by": {
+      "clinic": {
+       "ECH": {
+        "found": 4,
+        "eligible": 16
+       },
+       "MHK": {
+        "found": 5,
+        "eligible": 6
+       },
+       "NFM": {
+        "found": 9,
+        "eligible": 12
+       }
+      },
+      "race": {
+       "Black or African American": {
+        "found": 3,
+        "eligible": 13
+       },
+       "Other": {
+        "found": 1,
+        "eligible": 2
+       },
+       "White": {
+        "found": 14,
+        "eligible": 19
+       }
+      }
+     },
+     "hard": {
+      "n": 24,
+      "right": 2,
+      "review": 24,
+      "wrong": 0
+     },
+     "prescreen": {
+      "excluded": 196,
+      "eligible": 18,
+      "open": 24,
+      "missing": 2
+     },
+     "open_patients": 24,
+     "criterion_accuracy": 1.0,
+     "criteria_decided": 1690,
+     "traps": {
+      "family_history": {
+       "right": 0,
+       "n": 4
+      },
+      "metformin_recent_start": {
+       "right": 0,
+       "n": 1
+      },
+      "mild_retinopathy": {
+       "right": 1,
+       "n": 1
+      },
+      "negated_hypo_unawareness": {
+       "right": 0,
+       "n": 3
+      },
+      "no_lab": {
+       "right": 2,
+       "n": 2
+      },
+      "old_diabetes_med": {
+       "right": 0,
+       "n": 2
+      },
+      "short_insulin_course": {
+       "right": 1,
+       "n": 4
+      },
+      "stale_lab": {
+       "right": 0,
+       "n": 1
+      },
+      "stale_med_list": {
+       "right": 0,
+       "n": 2
+      }
+     },
+     "llm_calls": 0,
+     "tokens": 0,
+     "failed_calls": 0,
+     "seconds": 0.0,
+     "seconds_per_open_patient": null,
+     "guard_problems": 0,
+     "reviewer_rejections": 0,
+     "answers_accepted": 0,
+     "errors": {}
+    },
+    "single_prompt": {
+     "tp": 34,
+     "fp": 2,
+     "fn": 0,
+     "precision": 0.944,
+     "recall": 1.0,
+     "missed_as_ineligible": 0,
+     "needs_review": 4,
+     "exact": 238,
+     "n": 240,
+     "accuracy": 0.992,
+     "recall_by": {
+      "clinic": {
+       "ECH": {
+        "found": 16,
+        "eligible": 16
+       },
+       "MHK": {
+        "found": 6,
+        "eligible": 6
+       },
+       "NFM": {
+        "found": 12,
+        "eligible": 12
+       }
+      },
+      "race": {
+       "Black or African American": {
+        "found": 13,
+        "eligible": 13
+       },
+       "Other": {
+        "found": 2,
+        "eligible": 2
+       },
+       "White": {
+        "found": 19,
+        "eligible": 19
+       }
+      }
+     },
+     "hard": {
+      "n": 24,
+      "right": 22,
+      "review": 2,
+      "wrong": 2
+     },
+     "prescreen": {
+      "excluded": 196,
+      "eligible": 18,
+      "open": 24,
+      "missing": 2
+     },
+     "open_patients": 24,
+     "criterion_accuracy": 0.998,
+     "criteria_decided": 1730,
+     "traps": {
+      "family_history": {
+       "right": 4,
+       "n": 4
+      },
+      "metformin_recent_start": {
+       "right": 1,
+       "n": 1
+      },
+      "mild_retinopathy": {
+       "right": 1,
+       "n": 1
+      },
+      "negated_hypo_unawareness": {
+       "right": 3,
+       "n": 3
+      },
+      "no_lab": {
+       "right": 2,
+       "n": 2
+      },
+      "old_diabetes_med": {
+       "right": 2,
+       "n": 2
+      },
+      "short_insulin_course": {
+       "right": 4,
+       "n": 4
+      },
+      "stale_lab": {
+       "right": 1,
+       "n": 1
+      },
+      "stale_med_list": {
+       "right": 1,
+       "n": 2
+      }
+     },
+     "llm_calls": 24,
+     "tokens": 30877,
+     "failed_calls": 0,
+     "seconds": 165.0,
+     "seconds_per_open_patient": 6.9,
+     "guard_problems": 0,
+     "reviewer_rejections": 0,
+     "answers_accepted": 0,
+     "errors": {}
+    },
+    "agents": {
+     "tp": 34,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "missed_as_ineligible": 0,
+     "needs_review": 5,
+     "exact": 239,
+     "n": 240,
+     "accuracy": 0.996,
+     "recall_by": {
+      "clinic": {
+       "ECH": {
+        "found": 16,
+        "eligible": 16
+       },
+       "MHK": {
+        "found": 6,
+        "eligible": 6
+       },
+       "NFM": {
+        "found": 12,
+        "eligible": 12
+       }
+      },
+      "race": {
+       "Black or African American": {
+        "found": 13,
+        "eligible": 13
+       },
+       "Other": {
+        "found": 2,
+        "eligible": 2
+       },
+       "White": {
+        "found": 19,
+        "eligible": 19
+       }
+      }
+     },
+     "hard": {
+      "n": 24,
+      "right": 23,
+      "review": 3,
+      "wrong": 0
+     },
+     "prescreen": {
+      "excluded": 196,
+      "eligible": 18,
+      "open": 24,
+      "missing": 2
+     },
+     "open_patients": 24,
+     "criterion_accuracy": 1.0,
+     "criteria_decided": 1728,
+     "traps": {
+      "family_history": {
+       "right": 4,
+       "n": 4
+      },
+      "metformin_recent_start": {
+       "right": 1,
+       "n": 1
+      },
+      "mild_retinopathy": {
+       "right": 1,
+       "n": 1
+      },
+      "negated_hypo_unawareness": {
+       "right": 3,
+       "n": 3
+      },
+      "no_lab": {
+       "right": 2,
+       "n": 2
+      },
+      "old_diabetes_med": {
+       "right": 2,
+       "n": 2
+      },
+      "short_insulin_course": {
+       "right": 4,
+       "n": 4
+      },
+      "stale_lab": {
+       "right": 1,
+       "n": 1
+      },
+      "stale_med_list": {
+       "right": 1,
+       "n": 2
+      }
+     },
+     "llm_calls": 130,
+     "tokens": 137790,
+     "failed_calls": 0,
+     "seconds": 468.6,
+     "seconds_per_open_patient": 19.5,
+     "guard_problems": 7,
+     "reviewer_rejections": 0,
+     "answers_accepted": 38,
+     "errors": {}
+    }
+   },
+   "hard_set": {
+    "n": 24,
+    "gold": {
+     "eligible": 16,
+     "ineligible": 6,
+     "unknown": 2
+    }
+   }
+  },
+  "NCT06742723": {
+   "gold": {
+    "ineligible": 208,
+    "eligible": 16,
+    "unknown": 16
+   },
+   "methods": {
+    "rules": {
+     "tp": 8,
+     "fp": 0,
+     "fn": 8,
+     "precision": 1.0,
+     "recall": 0.5,
+     "missed_as_ineligible": 0,
+     "needs_review": 36,
+     "exact": 220,
+     "n": 240,
+     "accuracy": 0.917,
+     "recall_by": {
+      "clinic": {
+       "ECH": {
+        "found": 0,
+        "eligible": 6
+       },
+       "MHK": {
+        "found": 4,
+        "eligible": 6
+       },
+       "NFM": {
+        "found": 4,
+        "eligible": 4
+       }
+      },
+      "race": {
+       "Black or African American": {
+        "found": 1,
+        "eligible": 5
+       },
+       "White": {
+        "found": 7,
+        "eligible": 11
+       }
+      }
+     },
+     "hard": {
+      "n": 17,
+      "right": 8,
+      "review": 17,
+      "wrong": 0
+     },
+     "prescreen": {
+      "excluded": 196,
+      "eligible": 8,
+      "open": 30,
+      "missing": 6
+     },
+     "open_patients": 30,
+     "criterion_accuracy": 1.0,
+     "criteria_decided": 3374,
+     "traps": {
+      "family_history": {
+       "right": 0,
+       "n": 1
+      },
+      "metformin_recent_start": {
+       "right": 1,
+       "n": 1
+      },
+      "mild_retinopathy": {
+       "right": 1,
+       "n": 1
+      },
+      "no_lab": {
+       "right": 2,
+       "n": 2
+      },
+      "old_aki": {
+       "right": 0,
+       "n": 2
+      },
+      "short_insulin_course": {
+       "right": 1,
+       "n": 1
+      },
+      "stale_med_list": {
+       "right": 1,
+       "n": 1
+      }
+     },
+     "llm_calls": 0,
+     "tokens": 0,
+     "failed_calls": 0,
+     "seconds": 0.0,
+     "seconds_per_open_patient": null,
+     "guard_problems": 0,
+     "reviewer_rejections": 0,
+     "answers_accepted": 0,
+     "errors": {}
+    },
+    "rules_mapped": {
+     "tp": 10,
+     "fp": 0,
+     "fn": 6,
+     "precision": 1.0,
+     "recall": 0.625,
+     "missed_as_ineligible": 0,
+     "needs_review": 25,
+     "exact": 231,
+     "n": 240,
+     "accuracy": 0.963,
+     "recall_by": {
+      "clinic": {
+       "ECH": {
+        "found": 2,
+        "eligible": 6
+       },
+       "MHK": {
+        "found": 4,
+        "eligible": 6
+       },
+       "NFM": {
+        "found": 4,
+        "eligible": 4
+       }
+      },
+      "race": {
+       "Black or African American": {
+        "found": 2,
+        "eligible": 5
+       },
+       "White": {
+        "found": 8,
+        "eligible": 11
+       }
+      }
+     },
+     "hard": {
+      "n": 17,
+      "right": 8,
+      "review": 17,
+      "wrong": 0
+     },
+     "prescreen": {
+      "excluded": 205,
+      "eligible": 10,
+      "open": 17,
+      "missing": 8
+     },
+     "open_patients": 17,
+     "criterion_accuracy": 1.0,
+     "criteria_decided": 3492,
+     "traps": {
+      "family_history": {
+       "right": 0,
+       "n": 1
+      },
+      "metformin_recent_start": {
+       "right": 1,
+       "n": 1
+      },
+      "mild_retinopathy": {
+       "right": 1,
+       "n": 1
+      },
+      "no_lab": {
+       "right": 2,
+       "n": 2
+      },
+      "old_aki": {
+       "right": 0,
+       "n": 2
+      },
+      "short_insulin_course": {
+       "right": 1,
+       "n": 1
+      },
+      "stale_med_list": {
+       "right": 1,
+       "n": 1
+      }
+     },
+     "llm_calls": 0,
+     "tokens": 0,
+     "failed_calls": 0,
+     "seconds": 0.0,
+     "seconds_per_open_patient": null,
+     "guard_problems": 0,
+     "reviewer_rejections": 0,
+     "answers_accepted": 0,
+     "errors": {}
+    },
+    "single_prompt": {
+     "tp": 14,
+     "fp": 4,
+     "fn": 2,
+     "precision": 0.778,
+     "recall": 0.875,
+     "missed_as_ineligible": 2,
+     "needs_review": 8,
+     "exact": 229,
+     "n": 240,
+     "accuracy": 0.954,
+     "recall_by": {
+      "clinic": {
+       "ECH": {
+        "found": 4,
+        "eligible": 6
+       },
+       "MHK": {
+        "found": 6,
+        "eligible": 6
+       },
+       "NFM": {
+        "found": 4,
+        "eligible": 4
+       }
+      },
+      "race": {
+       "Black or African American": {
+        "found": 4,
+        "eligible": 5
+       },
+       "White": {
+        "found": 10,
+        "eligible": 11
+       }
+      }
+     },
+     "hard": {
+      "n": 17,
+      "right": 6,
+      "review": 0,
+      "wrong": 11
+     },
+     "prescreen": {
+      "excluded": 205,
+      "eligible": 10,
+      "open": 17,
+      "missing": 8
+     },
+     "open_patients": 17,
+     "criterion_accuracy": 0.993,
+     "criteria_decided": 3529,
+     "traps": {
+      "family_history": {
+       "right": 1,
+       "n": 1
+      },
+      "metformin_recent_start": {
+       "right": 0,
+       "n": 1
+      },
+      "mild_retinopathy": {
+       "right": 0,
+       "n": 1
+      },
+      "no_lab": {
+       "right": 0,
+       "n": 2
+      },
+      "old_aki": {
+       "right": 2,
+       "n": 2
+      },
+      "short_insulin_course": {
+       "right": 0,
+       "n": 1
+      },
+      "stale_med_list": {
+       "right": 0,
+       "n": 1
+      }
+     },
+     "llm_calls": 17,
+     "tokens": 22818,
+     "failed_calls": 0,
+     "seconds": 121.3,
+     "seconds_per_open_patient": 7.1,
+     "guard_problems": 0,
+     "reviewer_rejections": 0,
+     "answers_accepted": 0,
+     "errors": {}
+    },
+    "agents": {
+     "tp": 15,
+     "fp": 0,
+     "fn": 1,
+     "precision": 1.0,
+     "recall": 0.938,
+     "missed_as_ineligible": 0,
+     "needs_review": 18,
+     "exact": 238,
+     "n": 240,
+     "accuracy": 0.992,
+     "recall_by": {
+      "clinic": {
+       "ECH": {
+        "found": 5,
+        "eligible": 6
+       },
+       "MHK": {
+        "found": 6,
+        "eligible": 6
+       },
+       "NFM": {
+        "found": 4,
+        "eligible": 4
+       }
+      },
+      "race": {
+       "Black or African American": {
+        "found": 5,
+        "eligible": 5
+       },
+       "White": {
+        "found": 10,
+        "eligible": 11
+       }
+      }
+     },
+     "hard": {
+      "n": 17,
+      "right": 15,
+      "review": 10,
+      "wrong": 0
+     },
+     "prescreen": {
+      "excluded": 205,
+      "eligible": 10,
+      "open": 17,
+      "missing": 8
+     },
+     "open_patients": 17,
+     "criterion_accuracy": 1.0,
+     "criteria_decided": 3513,
+     "traps": {
+      "family_history": {
+       "right": 0,
+       "n": 1
+      },
+      "metformin_recent_start": {
+       "right": 1,
+       "n": 1
+      },
+      "mild_retinopathy": {
+       "right": 1,
+       "n": 1
+      },
+      "no_lab": {
+       "right": 2,
+       "n": 2
+      },
+      "old_aki": {
+       "right": 2,
+       "n": 2
+      },
+      "short_insulin_course": {
+       "right": 1,
+       "n": 1
+      },
+      "stale_med_list": {
+       "right": 1,
+       "n": 1
+      }
+     },
+     "llm_calls": 76,
+     "tokens": 68047,
+     "failed_calls": 0,
+     "seconds": 254.4,
+     "seconds_per_open_patient": 15.0,
+     "guard_problems": 3,
+     "reviewer_rejections": 1,
+     "answers_accepted": 21,
+     "errors": {}
+    }
+   },
+   "hard_set": {
+    "n": 17,
+    "gold": {
+     "unknown": 8,
+     "eligible": 6,
+     "ineligible": 3
+    }
+   }
+  },
+  "NCT06736574": {
+   "gold": {
+    "ineligible": 227,
+    "unknown": 3,
+    "eligible": 10
+   },
+   "methods": {
+    "rules": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 10,
+     "precision": null,
+     "recall": 0.0,
+     "missed_as_ineligible": 0,
+     "needs_review": 23,
+     "exact": 220,
+     "n": 240,
+     "accuracy": 0.917,
+     "recall_by": {
+      "clinic": {
+       "ECH": {
+        "found": 0,
+        "eligible": 1
+       },
+       "MHK": {
+        "found": 0,
+        "eligible": 8
+       },
+       "NFM": {
+        "found": 0,
+        "eligible": 1
+       }
+      },
+      "race": {
+       "Black or African American": {
+        "found": 0,
+        "eligible": 2
+       },
+       "White": {
+        "found": 0,
+        "eligible": 8
+       }
+      }
+     },
+     "hard": {
+      "n": 23,
+      "right": 3,
+      "review": 23,
+      "wrong": 0
+     },
+     "prescreen": {
+      "excluded": 217,
+      "open": 23
+     },
+     "open_patients": 23,
+     "criterion_accuracy": 1.0,
+     "criteria_decided": 2780,
+     "traps": {
+      "mild_aortic_stenosis": {
+       "right": 1,
+       "n": 1
+      },
+      "stale_echo": {
+       "right": 3,
+       "n": 3
+      }
+     },
+     "llm_calls": 0,
+     "tokens": 0,
+     "failed_calls": 0,
+     "seconds": 0.0,
+     "seconds_per_open_patient": null,
+     "guard_problems": 0,
+     "reviewer_rejections": 0,
+     "answers_accepted": 0,
+     "errors": {}
+    },
+    "rules_mapped": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 10,
+     "precision": null,
+     "recall": 0.0,
+     "missed_as_ineligible": 0,
+     "needs_review": 23,
+     "exact": 220,
+     "n": 240,
+     "accuracy": 0.917,
+     "recall_by": {
+      "clinic": {
+       "ECH": {
+        "found": 0,
+        "eligible": 1
+       },
+       "MHK": {
+        "found": 0,
+        "eligible": 8
+       },
+       "NFM": {
+        "found": 0,
+        "eligible": 1
+       }
+      },
+      "race": {
+       "Black or African American": {
+        "found": 0,
+        "eligible": 2
+       },
+       "White": {
+        "found": 0,
+        "eligible": 8
+       }
+      }
+     },
+     "hard": {
+      "n": 23,
+      "right": 3,
+      "review": 23,
+      "wrong": 0
+     },
+     "prescreen": {
+      "excluded": 217,
+      "open": 23
+     },
+     "open_patients": 23,
+     "criterion_accuracy": 1.0,
+     "criteria_decided": 2841,
+     "traps": {
+      "mild_aortic_stenosis": {
+       "right": 1,
+       "n": 1
+      },
+      "stale_echo": {
+       "right": 3,
+       "n": 3
+      }
+     },
+     "llm_calls": 0,
+     "tokens": 0,
+     "failed_calls": 0,
+     "seconds": 0.0,
+     "seconds_per_open_patient": null,
+     "guard_problems": 0,
+     "reviewer_rejections": 0,
+     "answers_accepted": 0,
+     "errors": {}
+    },
+    "single_prompt": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 10,
+     "precision": null,
+     "recall": 0.0,
+     "missed_as_ineligible": 10,
+     "needs_review": 0,
+     "exact": 227,
+     "n": 240,
+     "accuracy": 0.946,
+     "recall_by": {
+      "clinic": {
+       "ECH": {
+        "found": 0,
+        "eligible": 1
+       },
+       "MHK": {
+        "found": 0,
+        "eligible": 8
+       },
+       "NFM": {
+        "found": 0,
+        "eligible": 1
+       }
+      },
+      "race": {
+       "Black or African American": {
+        "found": 0,
+        "eligible": 2
+       },
+       "White": {
+        "found": 0,
+        "eligible": 8
+       }
+      }
+     },
+     "hard": {
+      "n": 23,
+      "right": 10,
+      "review": 0,
+      "wrong": 13
+     },
+     "prescreen": {
+      "excluded": 217,
+      "open": 23
+     },
+     "open_patients": 23,
+     "criterion_accuracy": 0.99,
+     "criteria_decided": 2892,
+     "traps": {
+      "mild_aortic_stenosis": {
+       "right": 0,
+       "n": 1
+      },
+      "stale_echo": {
+       "right": 0,
+       "n": 3
+      }
+     },
+     "llm_calls": 23,
+     "tokens": 33968,
+     "failed_calls": 0,
+     "seconds": 177.0,
+     "seconds_per_open_patient": 7.7,
+     "guard_problems": 0,
+     "reviewer_rejections": 0,
+     "answers_accepted": 0,
+     "errors": {}
+    },
+    "agents": {
+     "tp": 9,
+     "fp": 0,
+     "fn": 1,
+     "precision": 1.0,
+     "recall": 0.9,
+     "missed_as_ineligible": 0,
+     "needs_review": 8,
+     "exact": 235,
+     "n": 240,
+     "accuracy": 0.979,
+     "recall_by": {
+      "clinic": {
+       "ECH": {
+        "found": 1,
+        "eligible": 1
+       },
+       "MHK": {
+        "found": 7,
+        "eligible": 8
+       },
+       "NFM": {
+        "found": 1,
+        "eligible": 1
+       }
+      },
+      "race": {
+       "Black or African American": {
+        "found": 2,
+        "eligible": 2
+       },
+       "White": {
+        "found": 7,
+        "eligible": 8
+       }
+      }
+     },
+     "hard": {
+      "n": 23,
+      "right": 18,
+      "review": 8,
+      "wrong": 0
+     },
+     "prescreen": {
+      "excluded": 217,
+      "open": 23
+     },
+     "open_patients": 23,
+     "criterion_accuracy": 1.0,
+     "criteria_decided": 2882,
+     "traps": {
+      "mild_aortic_stenosis": {
+       "right": 1,
+       "n": 1
+      },
+      "stale_echo": {
+       "right": 3,
+       "n": 3
+      }
+     },
+     "llm_calls": 141,
+     "tokens": 158316,
+     "failed_calls": 0,
+     "seconds": 529.7,
+     "seconds_per_open_patient": 23.0,
+     "guard_problems": 10,
+     "reviewer_rejections": 2,
+     "answers_accepted": 41,
+     "errors": {}
+    }
+   },
+   "hard_set": {
+    "n": 23,
+    "gold": {
+     "eligible": 10,
+     "unknown": 3,
+     "ineligible": 10
+    }
+   }
+  }
+ },
+ "overall": {
+  "rules_mapped": {
+   "precision": 1.0,
+   "recall": 0.467,
+   "accuracy": 0.929,
+   "needs_review": 74,
+   "missed_as_ineligible": 0,
+   "false_eligible": 0,
+   "llm_calls": 0,
+   "tokens": 0,
+   "seconds": 0.0,
+   "hard_n": 64,
+   "hard_right": 13,
+   "hard_wrong": 0,
+   "hard_review": 64,
+   "trap_accuracy": 0.424,
+   "recall_by_clinic": {
+    "ECH": "6/23",
+    "MHK": "9/20",
+    "NFM": "13/17"
+   }
+  },
+  "rules": {
+   "precision": 1.0,
+   "recall": 0.367,
+   "accuracy": 0.9,
+   "needs_review": 95,
+   "missed_as_ineligible": 0,
+   "false_eligible": 0,
+   "llm_calls": 0,
+   "tokens": 0,
+   "seconds": 0.0,
+   "hard_n": 64,
+   "hard_right": 13,
+   "hard_wrong": 0,
+   "hard_review": 64,
+   "trap_accuracy": 0.424,
+   "recall_by_clinic": {
+    "ECH": "0/23",
+    "MHK": "9/20",
+    "NFM": "13/17"
+   }
+  },
+  "agents": {
+   "precision": 1.0,
+   "recall": 0.967,
+   "accuracy": 0.989,
+   "needs_review": 31,
+   "missed_as_ineligible": 0,
+   "false_eligible": 0,
+   "llm_calls": 347,
+   "tokens": 364153,
+   "seconds": 1252.7,
+   "hard_n": 64,
+   "hard_right": 56,
+   "hard_wrong": 0,
+   "hard_review": 21,
+   "trap_accuracy": 0.939,
+   "recall_by_clinic": {
+    "ECH": "22/23",
+    "MHK": "19/20",
+    "NFM": "17/17"
+   }
+  },
+  "single_prompt": {
+   "precision": 0.889,
+   "recall": 0.8,
+   "accuracy": 0.964,
+   "needs_review": 12,
+   "missed_as_ineligible": 12,
+   "false_eligible": 6,
+   "llm_calls": 64,
+   "tokens": 87663,
+   "seconds": 463.3,
+   "hard_n": 64,
+   "hard_right": 38,
+   "hard_wrong": 26,
+   "hard_review": 2,
+   "trap_accuracy": 0.667,
+   "recall_by_clinic": {
+    "ECH": "20/23",
+    "MHK": "12/20",
+    "NFM": "16/17"
+   }
+  }
+ }
+}

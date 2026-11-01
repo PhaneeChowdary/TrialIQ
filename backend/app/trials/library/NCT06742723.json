@@ -1,0 +1,22 @@
+{
+ "nct_id": "NCT06742723",
+ "title": "A Phase III Renal Outcomes and Cardiovascular Mortality Study to Investigate the Efficacy and Safety of Baxdrostat in Combination With Dapagliflozin in Participants With Chronic Kidney Disease and High Blood Pressure",
+ "official_title": "A Phase III, Randomised, Double-blind, Placebo-controlled, Event-driven Study to Assess the Efficacy, Safety and Tolerability of Baxdrostat in Combination With Dapagliflozin Compared With Dapagliflozin Alone on Renal Outcomes and Cardiovascular Mortality in Participants With Chronic Kidney Disease and High Blood Pressure",
+ "status": "RECRUITING",
+ "phases": [
+  "PHASE3"
+ ],
+ "conditions": [
+  "Chronic Kidney Disease and Hypertension"
+ ],
+ "sponsor": "AstraZeneca",
+ "min_age": "18 Years",
+ "max_age": null,
+ "sex": "ALL",
+ "eligibility": "Inclusion Criteria:\n\n1. Participants of any sex and gender must be \u2265 18 years of age at the time of signing the informed consent.\n2. Participants with (a) or (b):\n\n   a) eGFR 30-59 mL/min/1.73 m\u00b2 (local or central laboratory value) AND:\n   * UACR \u2265 30 mg/g (3.39 mg/mmol) and \\< 500 mg/g (56.5 mg/mmol) (central laboratory value only), or\n   * UACR \u2265 500 mg/g (56.5 mg/mmol) and \u2264 5000 mg/g (565 mg/mmol) (local or central laboratory value), or\n   * UPCR \u2265 700 mg/g (79 mg/mmol) and \u2264 7000 mg/g (790 mg/mmol) (local laboratory value only).\n\n     (b) eGFR 60-75 mL/min/1.73 m\u00b2 (local or central laboratory value) AND:\n   * UACR \u2265 500 mg/g (56.5 mg/mmol) ) and \u2264 5000 mg/g (565 mg/mmol) (local or central laboratory value), or\n   * UPCR \u2265 700 mg/g (79 mg/mmol) and \u2264 7000 mg/g (790 mg/mmol) (local laboratory value only)\n3. \\[obsolete\\]\n4. Participants with history of HTN and a SBP \u2265 130 mmHg (the most recent value within 4 weeks prior to screening or at the Screening Visit) and \u2265 120 mmHg at the Randomisation Visit.\n5. Stable and maximum tolerated dose of an ACEi or an ARB (not both) for at least 4 weeks prior to Screening Visit.\n6. Participants with:\n\n   1. Serum or plasma potassium \u2265 3.0 and \u2264 4.8 mmol/L if eGFR \u2265 45 mL/min/1.73 m2 (local or central laboratory values)\n   2. Serum or plasma potassium \u2265 3.0 and \u2264 4.5 mmol/L if eGFR \\< 45 mL/min/1.73 m2 (local or central laboratory values)\n\nExclusion Criteria:\n\n1. Systolic blood pressure \\> 180 mmHg, or diastolic BP \\> 110 mmHg at screening.\n2. Known hyperkalaemia, defined as potassium of \u2265 5.5 mmol/L within 3 months at screening.\n3. Serum sodium \\< 135 mmol/L (central or local laboratory values obtained within 4 weeks prior to screening or at the Screening Visit).\n\n4\\. Participants with T1DM will be excluded, except:\n\n1. For US only: patients with T1DM treated with SGLT2i for at least 4 months, without DKA during that period, and who have experience with ketone monitoring are eligible for inclusion.\n2. For Japan only: patients with T1DM treated with dapagliflozin 10 mg for at least 4 months, without DKA during the period of dapagliflozin treatment are eligible for inclusion.\n\n   5 Uncontrolled T2DM with HbA1c \\> 10.5% (\\> 91 mmol/mol) (central or local laboratory values obtained within 3 months prior to screening or at the Screening Visit).\n\n   6 New York Heart Association functional HF class IV at screening.\n\n   7 Stroke, transient ischaemic cerebral attack, valve implantation or valve replacement, carotid surgery, or carotid angioplasty, acute coronary syndrome, or hospitalisation for worsening heart failure within previous 3 months prior to randomisation.\n\n   8 Documented history of adrenal insufficiency.\n\n   9 Any dialysis (including for acute kidney injury) within 3 months prior to Screening Visit.\n\n   10 Any acute kidney injury within 3 months prior to the Screening Visit.\n\n   11 History of organ transplant or bone marrow transplant, or planned organ transplant within 6 months following randomisation (including kidney transplant).\n\n   12 Any clinical condition requiring systemic immunosuppression therapy other than maintenance therapy (stable for at least 3 months prior to Visit 1).",
+ "indiana_sites": [
+  "Research Site"
+ ],
+ "last_update": "2026-09-25",
+ "fetched": "2026-10-06"
+}

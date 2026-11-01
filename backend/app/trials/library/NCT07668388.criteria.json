@@ -1,0 +1,204 @@
+{
+ "nct_id": "NCT07668388",
+ "screen_date": "2026-10-01",
+ "criteria": [
+  {
+   "id": "I1",
+   "kind": "inclusion",
+   "text": "Age 18-75 years (both inclusive) at the time of signing the informed consent.",
+   "atoms": [
+    {
+     "type": "age",
+     "concept": "age",
+     "min": 18.0,
+     "max": 75.0,
+     "unit": "years"
+    }
+   ]
+  },
+  {
+   "id": "I2",
+   "kind": "inclusion",
+   "text": "Diagnosed with type 2 diabetes greater than or equal to (≥) 180 days before screening.",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "type 2 diabetes",
+     "codes": [
+      "E11"
+     ],
+     "keywords": [
+      "type 2 diabetes",
+      "T2DM",
+      "DM2",
+      "diabetes mellitus type 2"
+     ],
+     "min_duration_days": 180
+    }
+   ]
+  },
+  {
+   "id": "I3",
+   "kind": "inclusion",
+   "text": "Stable daily dose(s) ≥ 90 days before screening of the following antidiabetic drug(s) or combination regimen(s) at effective or maximum tolerated dose as judged by the investigator",
+   "atoms": [
+    {
+     "type": "medication",
+     "concept": "metformin",
+     "codes": [
+      "6809"
+     ],
+     "keywords": [
+      "metformin"
+     ],
+     "min_duration_days": 90
+    }
+   ]
+  },
+  {
+   "id": "I4",
+   "kind": "inclusion",
+   "text": "HbA1c of 7.0-10.5 percent (%) (53-91 millimoles per mole (mmol/mol)) (both inclusive) as assessed by central laboratory at screening.",
+   "atoms": [
+    {
+     "type": "lab",
+     "concept": "HbA1c",
+     "codes": [
+      "4548-4",
+      "17856-6",
+      "59261-8"
+     ],
+     "keywords": [
+      "HbA1c",
+      "A1c",
+      "hemoglobin A1c"
+     ],
+     "min": 7.0,
+     "max": 10.5,
+     "unit": "%",
+     "lookback_days": 180
+    }
+   ]
+  },
+  {
+   "id": "I5",
+   "kind": "inclusion",
+   "text": "Body mass index between 25.0 kg/m\\^2 and 50.0 kg/m\\^2 (both inclusive) at screening.",
+   "atoms": [
+    {
+     "type": "lab",
+     "concept": "BMI",
+     "codes": [
+      "39156-5"
+     ],
+     "keywords": [
+      "BMI"
+     ],
+     "min": 25.0,
+     "max": 50.0,
+     "unit": "kg/m2",
+     "lookback_days": 365
+    }
+   ]
+  },
+  {
+   "id": "E1",
+   "kind": "exclusion",
+   "text": "Treatment with any medication (prescription or over-the counter) or alternative remedies for the indication of diabetes or obesity other than stated in the inclusion criteria within 90 days before screening. However, short term insulin treatment for a maximum of 14 consecutive days and prior insulin treatment for gestational diabetes are allowed.",
+   "atoms": [
+    {
+     "type": "medication",
+     "concept": "other glucose-lowering medicine",
+     "codes": [
+      "274783",
+      "86009",
+      "51428",
+      "139825",
+      "1670007",
+      "253182",
+      "1605101",
+      "1991302",
+      "475968",
+      "1551291",
+      "60548",
+      "2601723",
+      "4821",
+      "25789",
+      "4815",
+      "593411",
+      "1100699",
+      "33738"
+     ],
+     "keywords": [
+      "insulin",
+      "glargine",
+      "lispro",
+      "semaglutide",
+      "tirzepatide",
+      "liraglutide",
+      "glipizide",
+      "sitagliptin",
+      "pioglitazone"
+     ],
+     "lookback_days": 90,
+     "ignore_courses_up_to_days": 14
+    }
+   ]
+  },
+  {
+   "id": "E2",
+   "kind": "exclusion",
+   "text": "Uncontrolled and potentially unstable diabetic retinopathy or maculopathy.",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "unstable retinopathy or maculopathy",
+     "codes": [
+      "E11.35",
+      "E11.311",
+      "E11.321",
+      "E11.331",
+      "E11.341"
+     ],
+     "keywords": [
+      "proliferative",
+      "macular edema",
+      "anti-VEGF",
+      "maculopathy"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E3",
+   "kind": "exclusion",
+   "text": "Known hypoglycaemic unawareness as indicated by the investigator according to Clarke's questionnaire, question 8.",
+   "atoms": [
+    {
+     "type": "note",
+     "concept": "hypoglycemia unawareness",
+     "keywords": [
+      "hypoglycemia unawareness",
+      "unaware",
+      "without warning symptoms",
+      "no warning symptoms"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "N1",
+   "kind": "inclusion",
+   "text": "Male or female (sex assigned at birth, inclusive of all gender identities).",
+   "screenable": false
+  },
+  {
+   "id": "N2",
+   "kind": "exclusion",
+   "text": "Verified by an eye examination performed within 90 days before screening or in the period between screening and randomisation.",
+   "screenable": false
+  }
+ ],
+ "approved_by": "Study coordinator (demo)",
+ "approved_at": "2026-10-01"
+}

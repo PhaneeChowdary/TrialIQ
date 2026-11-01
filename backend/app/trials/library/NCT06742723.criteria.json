@@ -1,0 +1,586 @@
+{
+ "nct_id": "NCT06742723",
+ "screen_date": "2026-10-01",
+ "criteria": [
+  {
+   "id": "I1",
+   "kind": "inclusion",
+   "text": "Participants of any sex and gender must be ≥ 18 years of age at the time of signing the informed consent.",
+   "atoms": [
+    {
+     "type": "age",
+     "concept": "age",
+     "min": 18.0,
+     "unit": "years"
+    }
+   ]
+  },
+  {
+   "id": "I2",
+   "kind": "inclusion",
+   "text": "eGFR 30-59 mL/min/1.73 m² (local or central laboratory value) AND:",
+   "combine": "any",
+   "atoms": [
+    {
+     "type": "group",
+     "concept": "group",
+     "all_of": [
+      {
+       "type": "lab",
+       "concept": "eGFR",
+       "codes": [
+        "98979-8",
+        "62238-1",
+        "33914-3"
+       ],
+       "keywords": [
+        "eGFR",
+        "GFR"
+       ],
+       "min": 30.0,
+       "max": 59.0,
+       "unit": "mL/min/1.73m2",
+       "lookback_days": 90
+      },
+      {
+       "type": "lab",
+       "concept": "UACR",
+       "codes": [
+        "9318-7",
+        "14959-1",
+        "30000-4"
+       ],
+       "keywords": [
+        "UACR",
+        "ACR",
+        "albumin/creatinine"
+       ],
+       "min": 30.0,
+       "max": 5000.0,
+       "unit": "mg/g",
+       "lookback_days": 90
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "concept": "group",
+     "all_of": [
+      {
+       "type": "lab",
+       "concept": "eGFR",
+       "codes": [
+        "98979-8",
+        "62238-1",
+        "33914-3"
+       ],
+       "keywords": [
+        "eGFR",
+        "GFR"
+       ],
+       "min": 60.0,
+       "max": 75.0,
+       "unit": "mL/min/1.73m2",
+       "lookback_days": 90
+      },
+      {
+       "type": "lab",
+       "concept": "UACR",
+       "codes": [
+        "9318-7",
+        "14959-1",
+        "30000-4"
+       ],
+       "keywords": [
+        "UACR",
+        "ACR",
+        "albumin/creatinine"
+       ],
+       "min": 500.0,
+       "max": 5000.0,
+       "unit": "mg/g",
+       "lookback_days": 90
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "I3",
+   "kind": "inclusion",
+   "text": "Participants with history of HTN and a SBP ≥ 130 mmHg (the most recent value within 4 weeks prior to screening or at the Screening Visit) and ≥ 120 mmHg at the Randomisation Visit.",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "hypertension",
+     "codes": [
+      "I10",
+      "I11",
+      "I12",
+      "I13",
+      "I15",
+      "I16"
+     ],
+     "keywords": [
+      "hypertension",
+      "HTN"
+     ],
+     "status": "ever"
+    },
+    {
+     "type": "lab",
+     "concept": "systolic blood pressure",
+     "codes": [
+      "8480-6"
+     ],
+     "keywords": [
+      "BP"
+     ],
+     "min": 130.0,
+     "unit": "mm[Hg]",
+     "lookback_days": 28
+    }
+   ]
+  },
+  {
+   "id": "I4",
+   "kind": "inclusion",
+   "text": "Stable and maximum tolerated dose of an ACEi or an ARB (not both) for at least 4 weeks prior to Screening Visit.",
+   "combine": "any",
+   "atoms": [
+    {
+     "type": "group",
+     "concept": "group",
+     "all_of": [
+      {
+       "type": "medication",
+       "concept": "ACE inhibitor",
+       "codes": [
+        "29046",
+        "3827",
+        "35296",
+        "18867"
+       ],
+       "keywords": [
+        "lisinopril",
+        "enalapril",
+        "ramipril",
+        "benazepril"
+       ],
+       "min_duration_days": 28
+      },
+      {
+       "type": "medication",
+       "concept": "ARB",
+       "codes": [
+        "52175",
+        "69749",
+        "83818",
+        "321064",
+        "214354",
+        "73494"
+       ],
+       "keywords": [
+        "losartan",
+        "valsartan",
+        "irbesartan",
+        "olmesartan",
+        "candesartan",
+        "telmisartan"
+       ],
+       "negate": true
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "concept": "group",
+     "all_of": [
+      {
+       "type": "medication",
+       "concept": "ARB",
+       "codes": [
+        "52175",
+        "69749",
+        "83818",
+        "321064",
+        "214354",
+        "73494"
+       ],
+       "keywords": [
+        "losartan",
+        "valsartan",
+        "irbesartan",
+        "olmesartan",
+        "candesartan",
+        "telmisartan"
+       ],
+       "min_duration_days": 28
+      },
+      {
+       "type": "medication",
+       "concept": "ACE inhibitor",
+       "codes": [
+        "29046",
+        "3827",
+        "35296",
+        "18867"
+       ],
+       "keywords": [
+        "lisinopril",
+        "enalapril",
+        "ramipril",
+        "benazepril"
+       ],
+       "negate": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "I5",
+   "kind": "inclusion",
+   "text": "Serum or plasma potassium ≥ 3.0 and ≤ 4.8 mmol/L if eGFR ≥ 45 mL/min/1.73 m2 (local or central laboratory values)",
+   "combine": "any",
+   "atoms": [
+    {
+     "type": "group",
+     "concept": "group",
+     "all_of": [
+      {
+       "type": "lab",
+       "concept": "eGFR",
+       "codes": [
+        "98979-8",
+        "62238-1",
+        "33914-3"
+       ],
+       "keywords": [
+        "eGFR"
+       ],
+       "min": 45.0,
+       "unit": "mL/min/1.73m2",
+       "lookback_days": 90
+      },
+      {
+       "type": "lab",
+       "concept": "potassium",
+       "codes": [
+        "2823-3"
+       ],
+       "keywords": [
+        "potassium",
+        "K"
+       ],
+       "min": 3.0,
+       "max": 4.8,
+       "unit": "mmol/L",
+       "lookback_days": 90
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "concept": "group",
+     "all_of": [
+      {
+       "type": "lab",
+       "concept": "eGFR",
+       "codes": [
+        "98979-8",
+        "62238-1",
+        "33914-3"
+       ],
+       "keywords": [
+        "eGFR"
+       ],
+       "max": 45.0,
+       "max_exclusive": true,
+       "unit": "mL/min/1.73m2",
+       "lookback_days": 90
+      },
+      {
+       "type": "lab",
+       "concept": "potassium",
+       "codes": [
+        "2823-3"
+       ],
+       "keywords": [
+        "potassium",
+        "K"
+       ],
+       "min": 3.0,
+       "max": 4.5,
+       "unit": "mmol/L",
+       "lookback_days": 90
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E1",
+   "kind": "exclusion",
+   "text": "Systolic blood pressure \\> 180 mmHg, or diastolic BP \\> 110 mmHg at screening.",
+   "combine": "any",
+   "atoms": [
+    {
+     "type": "lab",
+     "concept": "systolic blood pressure",
+     "codes": [
+      "8480-6"
+     ],
+     "keywords": [
+      "BP"
+     ],
+     "min": 180.0,
+     "min_exclusive": true,
+     "unit": "mm[Hg]",
+     "lookback_days": 90
+    },
+    {
+     "type": "lab",
+     "concept": "diastolic blood pressure",
+     "codes": [
+      "8462-4"
+     ],
+     "keywords": [
+      "BP"
+     ],
+     "min": 110.0,
+     "min_exclusive": true,
+     "unit": "mm[Hg]",
+     "lookback_days": 90
+    }
+   ]
+  },
+  {
+   "id": "E2",
+   "kind": "exclusion",
+   "text": "Known hyperkalaemia, defined as potassium of ≥ 5.5 mmol/L within 3 months at screening.",
+   "atoms": [
+    {
+     "type": "lab",
+     "concept": "potassium",
+     "codes": [
+      "2823-3"
+     ],
+     "keywords": [
+      "hyperkalemia",
+      "potassium"
+     ],
+     "min": 5.5,
+     "unit": "mmol/L",
+     "lookback_days": 90,
+     "aggregate": "any"
+    }
+   ]
+  },
+  {
+   "id": "E3",
+   "kind": "exclusion",
+   "text": "Serum sodium \\< 135 mmol/L (central or local laboratory values obtained within 4 weeks prior to screening or at the Screening Visit).",
+   "atoms": [
+    {
+     "type": "lab",
+     "concept": "sodium",
+     "codes": [
+      "2951-2"
+     ],
+     "keywords": [
+      "sodium",
+      "hyponatremia"
+     ],
+     "max": 135.0,
+     "max_exclusive": true,
+     "unit": "mmol/L",
+     "lookback_days": 28
+    }
+   ]
+  },
+  {
+   "id": "E4",
+   "kind": "exclusion",
+   "text": "Participants with T1DM will be excluded, except:",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "type 1 diabetes",
+     "codes": [
+      "E10"
+     ],
+     "keywords": [
+      "type 1 diabetes",
+      "T1DM"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E5",
+   "kind": "exclusion",
+   "text": "Uncontrolled T2DM with HbA1c \\> 10.5% (\\> 91 mmol/mol) (central or local laboratory values obtained within 3 months prior to screening or at the Screening Visit).",
+   "atoms": [
+    {
+     "type": "lab",
+     "concept": "HbA1c",
+     "codes": [
+      "4548-4",
+      "17856-6",
+      "59261-8"
+     ],
+     "keywords": [
+      "HbA1c",
+      "A1c"
+     ],
+     "min": 10.5,
+     "min_exclusive": true,
+     "unit": "%",
+     "lookback_days": 90
+    }
+   ]
+  },
+  {
+   "id": "E6",
+   "kind": "exclusion",
+   "text": "New York Heart Association functional HF class IV at screening.",
+   "atoms": [
+    {
+     "type": "note",
+     "concept": "NYHA class IV",
+     "keywords": [
+      "NYHA class IV",
+      "NYHA IV",
+      "class IV"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E7",
+   "kind": "exclusion",
+   "text": "Stroke, transient ischaemic cerebral attack, valve implantation or valve replacement, carotid surgery, or carotid angioplasty, acute coronary syndrome, or hospitalisation for worsening heart failure within previous 3 months prior to randomisation.",
+   "combine": "any",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "stroke, TIA or acute coronary syndrome",
+     "codes": [
+      "I63",
+      "G45",
+      "I21",
+      "I24"
+     ],
+     "keywords": [
+      "stroke",
+      "transient ischemic attack",
+      "TIA",
+      "NSTEMI",
+      "myocardial infarction"
+     ],
+     "lookback_days": 90
+    },
+    {
+     "type": "note",
+     "concept": "hospitalization for heart failure",
+     "keywords": [
+      "acute on chronic systolic heart failure",
+      "volume overload"
+     ],
+     "lookback_days": 90
+    }
+   ]
+  },
+  {
+   "id": "E8",
+   "kind": "exclusion",
+   "text": "Documented history of adrenal insufficiency.",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "adrenal insufficiency",
+     "codes": [
+      "E27.1",
+      "E27.2",
+      "E27.4"
+     ],
+     "keywords": [
+      "adrenal insufficiency",
+      "Addison"
+     ],
+     "status": "ever"
+    }
+   ]
+  },
+  {
+   "id": "E9",
+   "kind": "exclusion",
+   "text": "Any dialysis (including for acute kidney injury) within 3 months prior to Screening Visit.",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "dialysis",
+     "codes": [
+      "Z99.2"
+     ],
+     "keywords": [
+      "dialysis",
+      "hemodialysis"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E10",
+   "kind": "exclusion",
+   "text": "Any acute kidney injury within 3 months prior to the Screening Visit.",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "acute kidney injury",
+     "codes": [
+      "N17"
+     ],
+     "keywords": [
+      "acute kidney injury",
+      "AKI"
+     ],
+     "lookback_days": 90
+    }
+   ]
+  },
+  {
+   "id": "E11",
+   "kind": "exclusion",
+   "text": "History of organ transplant or bone marrow transplant, or planned organ transplant within 6 months following randomisation (including kidney transplant).",
+   "atoms": [
+    {
+     "type": "condition",
+     "concept": "organ transplant",
+     "codes": [
+      "Z94"
+     ],
+     "keywords": [
+      "transplant"
+     ],
+     "status": "ever"
+    }
+   ]
+  },
+  {
+   "id": "N1",
+   "kind": "exclusion",
+   "text": "Any clinical condition requiring systemic immunosuppression therapy other than maintenance therapy (stable for at least 3 months prior to Visit 1).",
+   "screenable": false
+  },
+  {
+   "id": "N2",
+   "kind": "inclusion",
+   "text": "UPCR ≥ 700 mg/g (79 mg/mmol) and ≤ 7000 mg/g (790 mg/mmol) (local laboratory value only).",
+   "screenable": false
+  }
+ ],
+ "approved_by": "Study coordinator (demo)",
+ "approved_at": "2026-10-01"
+}
